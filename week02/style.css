@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(213, 236, 243);
+}
+
+main { 
+  width: 50%;
+  margin: auto;
+}
+
+h1, figure, #quote {
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+}
+
+ul {
+  font-size: 22px;
+}
+
+li {
+  padding: 10px;
+}
+
+figcaption {
+  color: rgb(53, 53, 53);
+}
+
+h1 {
+  background-color: rgb(248, 217, 221);
+  border-radius: 10px;
+}
