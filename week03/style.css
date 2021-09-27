@@ -31,3 +31,7 @@ ul{
   font-size: 22px;
   list-style-position: inside;
 }
+
+a {
+  color: white;
+}
