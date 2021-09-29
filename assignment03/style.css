@@ -1,0 +1,55 @@
+/*
+How to Center a Website: https://www.w3schools.com/howto/howto_css_center_website.asp
+Setting the margin property to auto will horizontally center the element within its container.
+*/
+body {
+  background-color: black;
+  max-width: 960px;
+  margin: auto;
+}
+
+img {
+  width: 400px;
+}
+
+main {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  border: 1px solid white;
+  margin: 50px 250px;
+}
+
+/*
+How to Place Images Side by Side: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#:~:text=A%20flex%20container%20expands%20items,which%20is%20horizontally%2Dbased).
+*/
+
+.row {
+  display: flex;
+}
+
+.row .places {
+  width: 300px;
+  height: 200px;
+}
+
+/*
+flex is shorthand for flex-grow, flex-shrink, and flex-basis 
+Set flex-grow to 50% for two items in a row.
+*/
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+ul{
+  font-size: 22px;
+  list-style-position: inside;
+}
+
+a {
+  color: white;
+}
