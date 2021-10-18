@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(187, 218, 228);
+}
+
+#ground1{
+  position: absolute;
+}
+
+#ground2{
+  margin-left: 22.5px;
+}
+
+.movement1{
+  margin-right: 20px;
+  animation: move 2s linear infinite;
+}
+
+.movement2{
+  margin-right: 20px;
+  animation: move 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes move {
+  from{transform: translateY(0px)}
+  50%{
+    transform: translateY(10px);
+  }
+  to{transform: translateY(0px)}
+}
+
+#tail {
+  display: flex;
+}
+
+#tail-row {
+  display:flex;
+  margin-top: 40px;
+}
+
+#end-tail {
+  margin-top: 38px;
+}
+
+#face {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+#ears {
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+}
+
+#top-face {
+  width: 40px;
+  height: 15px;
+  margin: 0 auto;
+}
+
+#snout {
+  width: 50%;
+  height: 10px;
+  margin: 0 auto;
+}
+
+#body {
+  display: flex;
+  width: 50px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#feet {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mouse {
+  display: flex;
+}
+
+#cheese {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 300px;
+}
+
+#cheese-column1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#cheese-column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#cheese-column3 {
+  display: flex;
+  flex-direction: column;
+}
