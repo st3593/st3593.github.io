@@ -2,6 +2,27 @@ body {
   background-color: rgb(187, 218, 228);
 }
 
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 10px solid black; 
+  padding: 5px;
+  z-index: 1;
+}
+
+.home {
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 100px;
+}
+
 .word-row {
   display: flex;
   height: 125px;

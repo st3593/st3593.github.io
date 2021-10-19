@@ -1,7 +1,11 @@
-body {
-  background-color: rgb(187, 218, 228);
+#back {
+  position: absolute;
+  top: 90px;
 }
 
+main {
+  margin-top: 120px;
+}
 #ground1{
   position: absolute;
 }
@@ -27,6 +31,33 @@ body {
     transform: translateY(10px);
   }
   to{transform: translateY(0px)}
+}
+
+#clouds {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.cloud {
+  display:flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+.cloud-top {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.cloud-middle {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.cloud-bottom {
+  width: 60px;
+  margin: 0 auto;
 }
 
 #tail {
