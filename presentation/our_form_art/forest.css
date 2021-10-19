@@ -1,0 +1,139 @@
+main {
+  margin-top: 20%;
+}
+
+#ground-level {
+  display: flex;
+  align-items: flex-end;
+}
+
+#cat {
+  display: flex;
+  margin-right: 100px;
+}
+
+#tail {
+  display: flex;
+  margin-top: 38%;
+}
+
+#tail-column {
+  display:flex;
+  flex-direction: column;
+}
+
+#body {
+  display: flex;
+  width: 90px;
+  flex-direction: column;
+  margin-top: 50%;
+}
+
+.body-row {
+  height: 20px;
+}
+
+#feet {
+  display: flex;
+  justify-content: space-between;
+}
+
+#face {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  /* border: 1px solid black; */
+  margin-top: 20%;
+  margin-left: -12%; 
+}
+
+#ears {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+#left-ear {
+  display: flex;
+}
+
+#left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#right-column {
+  align-self: flex-end;
+}
+
+#right-ear {
+  display: flex;
+}
+
+#inner-ear {
+  align-self: flex-end;
+}
+
+#outer-ear {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-face {
+  height:20px;
+  width: 70%;
+  align-self: center;
+}
+
+#snout {
+  width: 20%;
+  height:10px;
+  align-self: center;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50%;
+}
+
+.additional-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.larger-tree-layer1 {
+  display: flex;
+}
+
+.larger-tree-layer2 {
+  display: flex;
+}
+
+.leaf-layer1 {
+  display: flex;
+}
+
+.leaf-layer2 {
+  display: flex;
+}
+
+.leaf-layer3 {
+  display: flex;
+}
+
+.branch {
+  display: flex;
+  margin: 0 auto;
+}
+
+.branch-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#floor {
+  display: flex;
+}
