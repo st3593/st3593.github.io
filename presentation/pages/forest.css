@@ -10,12 +10,17 @@ main {
 #cat {
   display: flex;
   margin-right: 100px;
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  align-items:flex-end;
 }
 
 #tail {
   display: flex;
-  position: absolute;
-  top: 51%;
+  position: relative;
+  top:-20%;
 }
 
 #tail-column {
@@ -27,9 +32,7 @@ main {
   display: flex;
   width: 90px;
   flex-direction: column;
-  position: absolute;
-  left: 3%;
-  top:55%;
+  position: relative;
 }
 
 .body-row {
@@ -45,9 +48,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 90px;
-  position: absolute;
-  left: 22%;
-  top: 24.5%;
+  position: relative;
+  top: -20%;
 }
 
 #ears {
