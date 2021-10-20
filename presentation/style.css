@@ -174,6 +174,132 @@ main {
   justify-content: space-between;
 }
 
+/* Radio Button Words*/
+.radio-word {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.radio-word-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* For bullet point containers */
+.bullet-points {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.bullet-point-row {
+  display: flex;
+  margin: 20px 0;
+}
+
+/* For the images slide */
+#tank{
+  position: absolute;
+  width: 30%;
+  margin-left: -47%;
+  margin-top: 5%;
+}
+
+#yeah{
+  position: absolute;
+  width: 30%;
+  margin-left: 18%;
+  margin-top: 15%;
+}
+
+#face{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: -15%;
+  width: 30%;
+}
+
+#zebra{
+  position: absolute;
+  width: 30%;
+  margin-top: 30%;
+  margin-left: -47%;
+}
+
+#family{
+  position: absolute;
+  width: 30%;
+  margin-top: 45%;
+  margin-left: 18%;
+}
+
+#cig{
+  position: absolute;
+  width: 30%;
+  margin-top: 50%;
+  margin-left: -13%;
+}
+
+#human{
+  position: absolute;
+  width: 30%;
+  margin-left: -45%;
+  margin-top: 55%;
+}
+
+/* For who part */
+.form-heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+#img1{
+  width: 25%;
+  margin-top: -6%;
+  left: 0.5%; 
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+}
+
+#img2{
+  width: 30%;
+  margin-left: 19%;
+  margin-top: -30%;
+  float: right;
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+}
+
+#textbox1{
+  margin-left: 37%;
+  margin-top: 5%;
+  text-align: center;
+  width: 200px;
+}
+
+#textbox2{
+  margin-left: 53%;
+  text-align: center;
+  width: 200px;
+}
+
+#textbox3{
+  margin-left: 32%;
+  width: 200px;
+}
+
+#textbox4{
+  margin-left: 50%;
+  width: 200px;
+}
+
+.text{
+  font-size: 18px;
+}
 
 
 
