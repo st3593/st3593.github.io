@@ -42,15 +42,14 @@ main {
   display: flex;
   flex-direction: column;
   width: 90px;
-  /* border: 1px solid black; */
-  margin-top: 20%;
-  margin-left: -12%; 
+  position: absolute;
+  left: 22%;
+  top: 24%;
 }
 
 #ears {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
 }
 
 #left-ear {
@@ -95,32 +94,32 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 50%;
+  margin-right: 20%;
 }
 
-.additional-layer {
+.top-layer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.larger-tree-layer1 {
+.top-layer1 {
   display: flex;
 }
 
-.larger-tree-layer2 {
+.top-layer2 {
   display: flex;
 }
 
-.leaf-layer1 {
+.bottom-layer1 {
   display: flex;
 }
 
-.leaf-layer2 {
+.bottom-layer2 {
   display: flex;
 }
 
-.leaf-layer3 {
+.bottom-layer3 {
   display: flex;
 }
 

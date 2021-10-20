@@ -12,6 +12,7 @@ main {
   top: 10%;
   width: 80px;
   height: 40px;
+  border: 3px solid black;
 }
 
 .nav-bar {
@@ -28,6 +29,7 @@ main {
 .home {
   color: black;
   font-size: 40px;
+  font-family: 'Nanum Gothic Coding', monospace;
   text-decoration: none;
 }
 
@@ -178,7 +180,7 @@ main {
 .radio-word {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .radio-word-column {
@@ -252,7 +254,8 @@ main {
 /* For who part */
 .form-heading {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 #img1{
@@ -301,5 +304,19 @@ main {
   font-size: 18px;
 }
 
+/* For Our Form Art Works slide */
+.form-button-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
+.our-form-art-form {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.our-form-art-button {
+  width: 50px;
+}
 
