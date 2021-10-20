@@ -1,0 +1,22 @@
+#what-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.what-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-art-bullet-points {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-art-bullet-point-row {
+  display: flex;
+  margin: 20px 0;
+}

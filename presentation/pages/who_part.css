@@ -1,0 +1,71 @@
+h1{
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title{
+  margin-top: 5%;
+  margin-bottom: -5%;
+  margin-left: 35%;
+  text-align: center;
+  display: flex;
+}
+
+#name_pos{
+  position: relative;
+  margin-top: 7%;
+  text-align: center;
+}
+
+#name{
+  text-align: center;
+  font-size: 20px;
+}
+
+#img1{
+  width: 25%;
+  margin-top: -6%;
+  left: 0.5%; 
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+}
+
+#img2{
+  width: 30%;
+  margin-left: 19%;
+  margin-top: -30%;
+  float: right;
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+}
+
+#textbox1{
+  margin-left: 37%;
+  margin-top: 5%;
+  text-align: center;
+  width: 200px;
+}
+
+#textbox2{
+  margin-left: 53%;
+  text-align: center;
+  width: 200px;
+}
+
+#textbox3{
+  margin-left: 32%;
+  width: 200px;
+}
+
+#textbox4{
+  margin-left: 50%;
+  width: 200px;
+}
+
+.text{
+  font-size: 18px;
+}
