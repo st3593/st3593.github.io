@@ -14,7 +14,8 @@ main {
 
 #tail {
   display: flex;
-  margin-top: 38%;
+  position: absolute;
+  top: 51%;
 }
 
 #tail-column {
@@ -26,7 +27,9 @@ main {
   display: flex;
   width: 90px;
   flex-direction: column;
-  margin-top: 50%;
+  position: absolute;
+  left: 3%;
+  top:55%;
 }
 
 .body-row {
@@ -44,7 +47,7 @@ main {
   width: 90px;
   position: absolute;
   left: 22%;
-  top: 24%;
+  top: 24.5%;
 }
 
 #ears {
@@ -88,6 +91,10 @@ main {
   width: 20%;
   height:10px;
   align-self: center;
+}
+
+#tree1 {
+  margin-left: 15%;
 }
 
 .tree {
