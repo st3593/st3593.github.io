@@ -1,0 +1,53 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+main {
+  text-align: center;
+  font-family: 'Libre Caslon Display', serif;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(250, 69, 129);
+}
+
+.heading {
+  border-bottom: 4px solid black;
+  margin-top: 50px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 250px 250px;
+  gap: 50px 50px;
+  justify-content: center;
+}
+
+.grid-image {
+  width: 400px;
+  height: 250px;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-image {
+  width: 400px;
+  height: 500px;
+}
+
+figcaption {
+  font-size: 20px;
+  font-weight:bold;
+}
