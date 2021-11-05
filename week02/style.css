@@ -1,5 +1,4 @@
 body {
-  background-color: rgb(213, 236, 243);
 }
 
 main { 
@@ -28,6 +27,5 @@ figcaption {
 }
 
 h1 {
-  background-color: rgb(248, 217, 221);
-  border-radius: 10px;
+  border-bottom: 4px solid black;
 }
