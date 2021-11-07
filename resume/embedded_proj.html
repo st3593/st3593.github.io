@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedded System Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="home">HOME</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="heading">Exercise Detector</h1>
+      <div class="line" id="embedded-line"></div>
+      
+      <div class="paragraph-section">
+        <h2>Brief Description</h2>
+        <p>
+          A Circuit Playground board will be used to detect a set of sit-ups, push-ups, jumping-jacks, or squats.
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Materials Used</h2>
+        <div id="materials-container">
+          <figure>
+            <img src="images/circuit-playground.jpg" class="embedded-img">
+            <figcaption>Adafruit Circuit Playground</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/lipo-battery.jpg" class="embedded-img">
+            <figcaption>LiPo Battery</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>User Instructions</h2>
+        <p>
+          The device will be placed on the user's chest with the micro-USB directed towards the ceiling. Once they are in the 
+          starting position for the exercise, they will press left button #4 to start the set. LED #13 will light up to indicate 
+          that the device is recording the body's movements. Each set will consist of 5 repetitions. After each repetition, a 
+          NeoPixel will light up, indicating which exercise has been performed. 
+        </p>
+        <ul>
+          <li>Red - No exercise detected </li>
+          <li>Purple - Situp</li>
+          <li>Green - Pushup</li>
+          <li>Blue - Jumping Jack</li>
+          <li>Yellow - Squat</li>
+        </ul>
+        <p>
+          After each repetition, there will also be a beeping sound to indicate the end of the repetition. Each repetition takes 
+          4 seconds, so a set consisting of 5 repetitions takes 20 seconds. After the set has been completed, LED #13 will turn 
+          off to indicate that the device is no longer recording the body's movements. The user can press right button #19 to 
+          reset the NeoPixels. Once again, the user will get into starting position and press left button #4 to start the set.
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Interested in using or learning more about this code?</h3>
+        <div class="source-code">
+          <img src="images/github.png" class="github-logo">
+          <a href="https://github.com/st3593/Exercise-Detector">Source Code</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

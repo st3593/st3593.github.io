@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="home">HOME</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="heading">AI Projects: Solving the 15 Puzzle Problem and 6x6 Futoshiki Puzzles</h1>
+      <div class="line" id="ai-line"></div>
+
+      <h2>15 Puzzle Problem</h2>
+      <div class="paragraph-section">
+        <h3>Problem Description</h3>
+        <p>
+          There is a 4x4 board with 15 tiles numbered from 1 to 15 and a blank tile. A tile can slide into the blank position if 
+          it is horizontally, vertically, or diagonally adjacent to the blank position. Given a start board configuration and a 
+          goal board configuration, find a sequence of moves to reach the goal configuration from the start configuration.  
+        </p>
+      </div>
+
+
+      <div class="paragraph-section">
+        <h3>Algorithms / Techniques Used</h3>
+        <ul>
+          <li>Informed (Heuristic) Search: A* Search Algorithm with Graph Search </li>
+          <li>
+            Heuristic function: sum of chessboard distances of tiles from their goal positions, where chessboard distance is 
+            the maximum of the horizontal and vertical distances
+          </li>
+        </ul>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Want to try it out yourself?</h3>
+        <a href="https://15puzzle.netlify.app/">15 Puzzle Game</a>
+        <p>
+          (For this game, there is only one goal configuration: the cells will be ordered from 1 to 15. Diagonal moves are also 
+          not allowed.)
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Interested in using or learning more about this code?</h3>
+        <div class="source-code">
+          <img src="images/github.png" class="github-logo">
+          <a href="https://github.com/st3593/15-Puzzle-Solver">Source Code</a>
+        </div>
+      </div>
+      <div class="line" id="divider"></div>
+      <h2>6x6 Futoshiki Puzzles</h2>
+      <div class="paragraph-section">
+        <h3>Problem Description</h3>
+        <p>
+          Given an initial board configuration with numbers already assigned to some cells and inequality relationships, 
+          complete the board such that all the constraints are satisfied. 
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Constraints</h3>
+        <ul>
+          <li>1) All inequality relationships between adjacent cells must be satisfied.</li>
+          <li>2) A digit can only appear once in every row and column.</li>
+        </ul>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Algorithms / Techniques Used</h3>
+        <ul>
+          <li>Backtracking Algorithm</li>
+          <li>Forward Checking</li>
+          <li>Minimum Remaining Values (MRV) Heuristic + Degree Heuristic - determine which variable to assign next</li>
+        </ul>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Want to try it out yourself?</h3>
+        <a href="https://www.futoshiki.org/">Futoshiki Puzzle Game</a>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Interested in using or learning more about this code?</h3>
+        <div class="source-code">
+          <img src="images/github.png" class="github-logo">
+          <a href="https://github.com/st3593/Futoshiki-Puzzle-Solver">Source Code</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transportation Planning Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="home">HOME</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="heading">EV Transportation Research</h1>
+      <div class="line" id="ev-line"></div>
+
+      <div class="paragraph-section">
+        <h2>Acknowledgment</h2>
+        <p>
+          This research was done in collaboration between the NYU Clean Fleet team and NYU BUILT Lab. 
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Glossary</h2>
+        <ul>
+          <li>EV - Electric Vehicle</li>
+          <li>DCAS - Department of Citywide Administrative Services</li>
+          <li>DCFC - Direct Current Fast Charger</li>
+        </ul>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Purpose</h2>
+        <p>
+          Evaluate NYC DCAS' charging station infrastructure using utilization ratio and queue delay. Propose locations to 
+          upgrade Level 2 charging stations with additional DCFCs. The ultimate goal of this research is to assist NYC DCAS with 
+          implementing Mayor Bill de Blasio's 80 x 50 plan to reduce greenhouse gases 80% by 2050.
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Motivation</h2>
+        <p>
+          Charging Time: According to ChargePoint, it takes 20-30 minutes for DCFCs and 4-6 hours for Level 2 chargers to fill up 
+          an 80-mile battery.
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>New York City Case Study - Base Scenario</h2>
+        <div class="figures-flex">
+          <div id="left-section">
+            <h3>1) Current EV Charging Station Infrastructure</h3>
+            <img src="images/transportation_research/charging_stations.png" id="img1">
+            <ul>
+              <li>567 total chargers - 563 Level 2 Chargers and 4 DCFCs</li>
+              <li>263 charging stations - 4 DCFC stations and 259 Level 2 charging stations </li>
+            </ul>
+          </div>
+
+          <div id="right-section">
+            <h3>2) EV Parking Locations</h3>
+            <img src="images/transportation_research/taz.png" id="img2">
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Findings</h2>
+        <div class="figures-flex">
+          <div>
+            <img src="images/transportation_research/access_charging_time.png" id="img3">
+            <p>
+              Long access and charging times occur in Queens, midtown Manhattan, and Staten Island.  
+            </p>
+          </div>
+
+          <img src="images/transportation_research/scenarios.png" id="img4">
+        </div>
+      </div>
+
+      <div class="paragraph-section">
+        <h2>Conclusion</h2>
+        <p>
+          Select locations with high utilization ratio instead of high queue delay. Charging stations with less chargers have 
+          longer queue delays, so the queue delay strategy may identify small-scale charging stations at low-demand areas.  
+        </p>
+      </div>
+
+      <div class="paragraph-section">
+        <h3>Interested in learning more about this topic?</h3>
+        <div id="transportation-links">
+          <a href="https://www.researchgate.net/publication/349234204_An_electric_vehicle_charging_station_access_equilibrium_model_with_MDC_queueing">Research Paper</a>
+          <div class="source-code">
+            <img src="images/github.png" class="github-logo">
+            <a href="https://github.com/BUILTNYU/EV_Charging_Station_Access_Equlibrium_Model">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
