@@ -1,3 +1,9 @@
+@media screen and (max-width:500px) {
+  .project {
+    font-size: 13px;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -7,10 +13,14 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
-nav {
+.nav-bar {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  margin: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,15 +31,15 @@ nav {
   box-shadow: 0px 2px 3px rgb(207, 207, 207);
 }
 
-.home {
+.nav-link {
   text-decoration: none;
   color: black;
   font-size: 30px;
   font-weight: 600;
 }
 
-.home:hover {
-  color: orange;
+.nav-link:hover {
+  color: royalblue;
 }
 
 .heading {
@@ -83,7 +93,7 @@ nav {
 }
 
 #intro-section {
-  background-image: url(images/home-page.jpg); 
+  background-image: url(images/home/home-page.jpg); 
   height: 100vh;
   background-position: center;
   background-size: cover;
