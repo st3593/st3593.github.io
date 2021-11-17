@@ -1,0 +1,16 @@
+#buttons-container {
+  display: flex;
+  column-gap: 20px;
+  /* justify-content: center; */
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+}
+
+#success {
+  visibility: hidden;
+}
