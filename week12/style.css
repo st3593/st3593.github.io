@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+}
+
+main {
+  margin: 0 auto;
+}
+
+div {
+  width: 5rem;
+  height: 5rem;
+  margin: 5rem;
+}
+
+.blue {
+  background-color: lime;
+}
+
+.green {
+  background-color: rgb(74, 255, 237);
+}
+
+.pink {
+  background-color: rgb(253, 59, 156);
+}
+
+.orange {
+  background-color: rgb(255, 145, 0);
+}
