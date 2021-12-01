@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Santa Says</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>  
+
+  <body>
+    <main>
+      <div id="gift-container">
+        <img src="images/gift.png" class="gift"> 
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent">
+      </div>
+      <div id="tile-container"> 
+        <div class="tile" id="tile-green">
+          <img src="images/christmas-tree.png" id="christmas-tree">
+        </div>
+        <div class="tile" id="tile-red">
+          <img src="images/santa-hat.png" id="santa-hat">
+        </div>
+        <div class="tile" id="tile-yellow">
+          <img src="images/gingerbread-man.png" id="gingerbread-man">
+        </div>
+        <div class="tile" id="tile-blue">
+          <img src="images/snowflake.png" id="snowflake">
+        </div>
+      </div>
+      <p>Santa Says . . .</p>
+      <div class="hidden">
+        <audio src="audio/bell.mp3" id="bell"></audio>
+        <audio src="audio/ho_ho_ho.mp3" id="ho-ho-ho"></audio>
+        <audio src="audio/giggle.mp3" id="giggle"></audio>
+        <audio src="audio/chime.mp3" id="chime"></audio>
+      </div>
+    </main>
+  </body>
+
+</html>

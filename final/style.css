@@ -1,0 +1,134 @@
+body {
+  background-color: #d7e4f0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#santa {
+  width: 400px;
+  height: 400px;
+}
+
+#santa-span {
+  color: #e50000;
+}
+
+#start-button {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+}
+
+/* Styling game page*/
+
+#gift-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+  grid-gap: 20px;
+}
+
+.gift {
+  width: 50px;
+  height: 50px;
+}
+
+.transparent {
+  opacity: 0.3;
+}
+
+#tile-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 180px 180px;
+  grid-gap: 25px;
+}
+
+.tile {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tile-green {
+  background-color: #59CD90;
+  border-color: #35A067;
+}
+
+#tile-red {
+  background-color: #ff6666;
+  border-color: #e50000;
+}
+
+#tile-yellow {
+  background-color: #f2c89b;
+  border-color: #e69138;
+}
+
+#tile-blue {
+  background-color: #3d85c6;
+  border-color: #2a5d8a;
+}
+
+#christmas-tree {
+  height: 150px;
+  width: 130px;
+}
+
+#santa-hat {
+  width: 180px;
+  height: 180px;
+}
+
+#gingerbread-man {
+  width: 180px;
+  height: 180px;
+}
+
+#snowflake {
+  width: 210px;
+  height: 210px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* For success page */
+#success-santa {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
