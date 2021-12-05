@@ -20,28 +20,47 @@ h4 {
   margin: 0;
 }
 
-h3 {
+p {
   margin-top: 30px;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#info-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #santa {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
-#santa-span {
+.santa-span {
   color: #e50000;
 }
 
+#arrow {
+  height: 150px;
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 #start-button {
+  margin-top: 30px;
   text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+  background-color: white;
+  border-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+#start-button:hover {
+  background-color: #f1f1f1;
 }
 
 /* Styling game page*/
@@ -71,6 +90,10 @@ h3 {
   grid-gap: 25px;
 }
 
+.unclickable {
+  pointer-events: none;
+}
+
 .tile {
   border-width: 3px;
   border-style: solid;
@@ -85,9 +108,17 @@ h3 {
   border-color: #35A067;
 }
 
+#tile-green.activated { /* when tile is activated */
+  background-color: #cdf0dd;
+}
+
 #tile-red {
   background-color: #ff6666;
   border-color: #e50000;
+}
+
+#tile-red.activated { /* when tile is activated */
+  background-color: #ffd1d1;
 }
 
 #tile-yellow {
@@ -95,40 +126,53 @@ h3 {
   border-color: #e69138;
 }
 
+#tile-yellow.activated { /* when tile is activated */
+  background-color: #fbeee1;
+}
+
 #tile-blue {
   background-color: #3d85c6;
   border-color: #2a5d8a;
 }
 
+#tile-blue.activated { /* when tile is activated */
+  background-color: #c4daed;
+}
+
 #christmas-tree {
   height: 150px;
   width: 130px;
+  pointer-events: none;
 }
 
 #santa-hat {
   width: 180px;
   height: 180px;
+  pointer-events: none;
 }
 
 #gingerbread-man {
   width: 180px;
   height: 180px;
+  pointer-events: none;
 }
 
 #snowflake {
   width: 210px;
   height: 210px;
+  pointer-events: none;
 }
 
 .hidden {
   display: none !important;
 }
 
-/* For success page */
-#success-santa {
-  width: 200px;
-  height: 300px;
-  position: absolute;
+#snow {
+  position: fixed;
   top: 0;
+  left: 0;
   right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1000;
 }

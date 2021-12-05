@@ -13,7 +13,9 @@
 
   <body>
     <main>
-      <div id="tile-container"> 
+      <div id="snow"></div>
+      <h1 id="heading"><span class = "santa-span">Santa</span> Says</h1>
+      <div id="tile-container" class="unclickable"> <!-- unclickable intially until player's turn -->
         <div class="tile" id="tile-green">
           <img src="images/christmas-tree.png" id="christmas-tree">
         </div>
@@ -27,25 +29,29 @@
           <img src="images/snowflake.png" id="snowflake">
         </div>
       </div>
-      <p>Santa Says . . .</p>
+
+      <button id="start-button">Start</button>
+      <p id="message" class="hidden"></p> <!-- hide this initially until the game starts -->
+
       <div id="gift-container">
-        <img src="images/gift.png" class="gift"> 
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
-        <img src="images/gift.png" class="gift transparent">
+        <img src="images/gift.png" class="gift transparent" id="gift1"> 
+        <img src="images/gift.png" class="gift transparent" id="gift2">
+        <img src="images/gift.png" class="gift transparent" id="gift3">
+        <img src="images/gift.png" class="gift transparent" id="gift4">
+        <img src="images/gift.png" class="gift transparent" id="gift5">
+        <img src="images/gift.png" class="gift transparent" id="gift6">
+        <img src="images/gift.png" class="gift transparent" id="gift7">
+        <img src="images/gift.png" class="gift transparent" id="gift8">
+        <img src="images/gift.png" class="gift transparent" id="gift9">
+        <img src="images/gift.png" class="gift transparent" id="gift10">
       </div>
 
+      <!-- hide the audio -->
       <div class="hidden">
-        <audio src="audio/bell.mp3" id="bell"></audio>
-        <audio src="audio/ho_ho_ho.mp3" id="ho-ho-ho"></audio>
-        <audio src="audio/giggle.mp3" id="giggle"></audio>
-        <audio src="audio/chime.mp3" id="chime"></audio>
+        <audio src="audio/E5.mp3" id="sound-green"></audio>
+        <audio src="audio/G5.mp3" id="sound-red"></audio>
+        <audio src="audio/C5.mp3" id="sound-yellow"></audio>
+        <audio src="audio/D5.mp3" id="sound-blue"></audio>
       </div>
     </main>
   </body>
