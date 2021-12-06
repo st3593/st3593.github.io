@@ -92,7 +92,8 @@ function handleClick() {
     return;
   }
 
-  if (playerSequence.length === sequence.length) { // level is over 
+  // add playerSequence === sequence to resolve spam bug
+  if (playerSequence.length === sequence.length && playerSequence === sequence) { // level is over 
     if (playerSequence.length === 10) { // completed all levels
       resetGame("Congrats! You completed all the levels.");
       return;
