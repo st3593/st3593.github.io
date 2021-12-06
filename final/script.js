@@ -101,6 +101,7 @@ function handleClick() {
     const gift = document.getElementById("gift" + level);
     gift.classList.remove("transparent"); // remove transparency of gift
 
+    tileContainer.classList.add("unclickable"); // make tiles unclickable again 
     playerSequence = []; // reset player sequence 
     message.textContent = "Success! Proceed to next level!";
     setTimeout(() => {nextLevel();}, 1000); // wait 1 second to see success message 
