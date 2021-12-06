@@ -1,4 +1,12 @@
-// Guide Used: https://freshman.tech/simon-game/
+/*
+Simon Game Guide: https://freshman.tech/simon-game/
+Snow Animation: https://www.balbooa.com/blog/tips-and-tricks/add-falling-snowflakes-animation-on-your-joomla-site
+
+Libraries:
+SweetAlert2 (used to design alert): https://sweetalert2.github.io/#examples
+Animate.css (used to animate alert): https://animate.style/
+*/
+
 let sequence = [];
 let playerSequence = [];
 let level = 0;
@@ -18,8 +26,33 @@ tileRed.addEventListener('click', handleClick);
 tileYellow.addEventListener('click', handleClick);
 tileBlue.addEventListener('click', handleClick);
 
-function resetGame(text) { // reset to original state 
-  alert(text);
+function resetGame(error) { // reset to original state 
+  if (error) { // display failure alert 
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops! Game over, you pressed the wrong tile.',
+      text: 'Santa failed to deliver your presents.',
+      showClass: {
+        popup: 'animate__animated animate__shakeX',
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
+  else { // display success alert 
+    Swal.fire({
+      icon: 'success',
+      title: 'Congrats! You completed all the levels.',
+      text: 'Santa has delivered all your presents!',
+      showClass: {
+        popup: 'animate__animated animate__tada',
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
   sequence = []; // reset sequence
   playerSequence = []; // reset player sequence 
   level = 0; // reset level
@@ -88,13 +121,13 @@ function handleClick() {
   activateTile(color);
   
   if (color !== sequence[index]) {
-    resetGame("Oops! Game over, you pressed the wrong tile.");
+    resetGame(true); // error = true 
     return;
   }
 
   if (playerSequence.length === sequence.length) { // level is over 
     if (playerSequence.length === 10) { // completed all levels
-      resetGame("Congrats! You completed all the levels.");
+      resetGame(false); // error = false
       return;
     }
     // obtain gift for level completion 
@@ -116,7 +149,7 @@ function startGame() {
   nextLevel();
 }
 
-// https://www.balbooa.com/blog/tips-and-tricks/add-falling-snowflakes-animation-on-your-joomla-site
+// Snow Animation 
 document.addEventListener('DOMContentLoaded', function(){
   var script = document.createElement('script');
   script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
