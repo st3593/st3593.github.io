@@ -1,5 +1,5 @@
 body {
-  background-color: #d7e4f0;
+  background-color: #aecfed;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
 }
@@ -52,10 +52,9 @@ p {
   text-decoration: none;
   cursor: pointer;
   font-size: 16px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: none;
   background-color: white;
-  border-color: #f1f1f1;
   border-radius: 5px;
 }
 
@@ -167,7 +166,17 @@ p {
   display: none !important;
 }
 
-#snow {
+#snow1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1000;
+}
+
+#snow2 {
   position: fixed;
   top: 0;
   left: 0;
