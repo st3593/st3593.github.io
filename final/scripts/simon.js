@@ -113,13 +113,13 @@ function nextLevel() { // play the next level
   setTimeout(() => {playerTurn(level)}, level * 600 + 1000); // add additional 1 second before player turn 
 }
 
-function handleClick() {
+function handleClick() { // tile is clicked 
   const id = this.id;
   const color = id.slice(5); // just get the color from the id 
   
   const index = playerSequence.push(color) - 1;  // push returns length of array, so subtract 1 to get index 
   activateTile(color);
-  
+
   if (color !== sequence[index]) {
     resetGame(true); // error = true 
     return;

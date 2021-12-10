@@ -104,7 +104,7 @@ p {
 
 #tile-green {
   background-color: #59CD90;
-  border-color: #35A067;
+  border-color: #00973A;
 }
 
 #tile-green.activated { /* when tile is activated */
@@ -113,7 +113,7 @@ p {
 
 #tile-red {
   background-color: #ff6666;
-  border-color: #e50000;
+  border-color: #CE2A2A;
 }
 
 #tile-red.activated { /* when tile is activated */
@@ -122,7 +122,7 @@ p {
 
 #tile-yellow {
   background-color: #f2c89b;
-  border-color: #e69138;
+  border-color: #C6684E;
 }
 
 #tile-yellow.activated { /* when tile is activated */
@@ -130,12 +130,12 @@ p {
 }
 
 #tile-blue {
-  background-color: #3d85c6;
-  border-color: #2a5d8a;
+  background-color: #3FA7D6;
+  border-color: #1C6282;
 }
 
 #tile-blue.activated { /* when tile is activated */
-  background-color: #c4daed;
+  background-color: #c5e4f2;
 }
 
 #christmas-tree {
@@ -157,8 +157,8 @@ p {
 }
 
 #snowflake {
-  width: 210px;
-  height: 210px;
+  width: 130px;
+  height: 130px;
   pointer-events: none;
 }
 
