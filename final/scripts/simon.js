@@ -10,6 +10,7 @@ particles.js (used for background snow animation): https://vincentgarreau.com/pa
 let sequence = [];
 let playerSequence = [];
 let level = 0;
+let display_gifts = false;
 
 const startButton = document.getElementById("start-button");
 const message = document.getElementById("message");
@@ -19,6 +20,7 @@ const tileGreen = document.getElementById("tile-green");
 const tileRed = document.getElementById("tile-red");
 const tileYellow = document.getElementById("tile-yellow");
 const tileBlue = document.getElementById("tile-blue");
+const gifts = document.getElementById("gifts");
 
 startButton.addEventListener('click', startGame); // the game starts when the start button is clicked 
 tileGreen.addEventListener('click', handleClick);
@@ -52,7 +54,9 @@ function resetGame(error) { // reset to original state
         popup: 'animate__animated animate__fadeOutUp'
       }
     })
+    display_gifts = true; // display falling gifts 
   }
+  console.log(display_gifts)
   sequence = []; // reset sequence
   playerSequence = []; // reset player sequence 
   level = 0; // reset level
@@ -64,6 +68,76 @@ function resetGame(error) { // reset to original state
     const gift = document.getElementById("gift" + i);
     gift.classList.add("transparent"); 
   }
+  if (display_gifts) { // display falling gifts 
+    particlesJS("gifts", {
+      "particles": {
+          "number": {
+              "value": 20,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#ffffff"
+          },
+          shape: {
+            type: "image",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: {
+              src:
+                "images/falling-gift.png",
+              width: 250,
+              height: 250
+            }
+          },
+          "opacity": {
+              "value": 1,
+              "random": false,
+              "anim": {
+                  "enable": false
+              }
+          },
+          "size": {
+              "value": 10,
+              "random": false,
+              "anim": {
+                  "enable": false
+              }
+          },
+          "line_linked": {
+              "enable": false
+          },
+          "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "bottom",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                  "enable": true,
+                  "rotateX": 300,
+                  "rotateY": 1200
+              }
+          }
+      },
+      "interactivity": {
+          "events": {
+              "onhover": {
+                  "enable": false
+              },
+              "onclick": {
+                  "enable": false
+              },
+              "resize": false
+          }
+      },
+      "retina_detect": true
+    });
+    }
 }
 
 function playerTurn(level) {
@@ -126,6 +200,7 @@ function handleClick() { // tile is clicked
   }
 
   if (playerSequence.length === sequence.length) { // level is over 
+    console.log(playerSequence);
     if (playerSequence.length === 10) { // completed all levels
       resetGame(false); // error = false
       return;
@@ -207,3 +282,75 @@ particlesJS("snow2", {
   },
   "retina_detect": true
 });
+
+// Falling gifts 
+/*
+particlesJS("gifts", {
+  "particles": {
+      "number": {
+          "value": 20,
+          "density": {
+              "enable": true,
+              "value_area": 800
+          }
+      },
+      "color": {
+          "value": "#ffffff"
+      },
+      shape: {
+        type: "image",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 5 },
+        image: {
+          src:
+            "images/falling-gift.png",
+          width: 250,
+          height: 250
+        }
+      },
+      "opacity": {
+          "value": 1,
+          "random": false,
+          "anim": {
+              "enable": false
+          }
+      },
+      "size": {
+          "value": 10,
+          "random": false,
+          "anim": {
+              "enable": false
+          }
+      },
+      "line_linked": {
+          "enable": false
+      },
+      "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "bottom",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+              "enable": true,
+              "rotateX": 300,
+              "rotateY": 1200
+          }
+      }
+  },
+  "interactivity": {
+      "events": {
+          "onhover": {
+              "enable": false
+          },
+          "onclick": {
+              "enable": false
+          },
+          "resize": false
+      }
+  },
+  "retina_detect": true
+});
+*/
