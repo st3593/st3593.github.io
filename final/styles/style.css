@@ -2,6 +2,13 @@ body {
   background-color: #aecfed;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+  /* disable text and image highlight*/
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 }
 
 main {
@@ -47,6 +54,7 @@ p {
   margin-bottom: 30px;
 }
 
+/* Styling game page*/
 #start-button {
   margin-top: 30px;
   text-decoration: none;
@@ -61,8 +69,6 @@ p {
 #start-button:hover {
   background-color: #f1f1f1;
 }
-
-/* Styling game page*/
 
 #gift-container {
   margin-top: 30px;
