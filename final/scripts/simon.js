@@ -4,7 +4,7 @@ Simon Game Guide: https://freshman.tech/simon-game/
 Libraries:
 SweetAlert2 (used to design alert): https://sweetalert2.github.io/#examples
 Animate.css (used to animate alert): https://animate.style/
-particles.js (used for background snow animation): https://vincentgarreau.com/particles.js/
+particles.js (used for background snow and falling gifts animation): https://vincentgarreau.com/particles.js/
 */
 
 let sequence = [];
