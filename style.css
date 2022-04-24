@@ -33,7 +33,7 @@ body {
   padding: 10px 0;
   position: relative;
   margin: 0 auto;
-  top: 160px;
+  top: 200px;
 }
 
 ul {
@@ -65,5 +65,5 @@ a {
 
 #bottom-right-leaf {
   right: 20%;
-  bottom: 1%;
+  bottom: 12%;
 }
